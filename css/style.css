@@ -564,6 +564,8 @@ body::after {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 
 .header__container {
@@ -573,12 +575,10 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 6.875rem;
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-  -webkit-transition: min-height 0.3s ease 0s;
-  -o-transition: min-height 0.3s ease 0s;
-  transition: min-height 0.3s ease 0s;
+  min-height: 5.625rem;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .header__logo {
@@ -600,6 +600,10 @@ body::after {
 
 .header._header-scroll {
   background-color: rgba(255, 255, 255, 0.85);
+}
+
+.header._header-scroll .header__container {
+  min-height: 2.5rem;
 }
 
 .menu {
@@ -2167,10 +2171,6 @@ body::after {
 }
 
 @media (min-width: 61.99875em) {
-  .header._header-scroll .header__container {
-    min-height: 2.5rem;
-  }
-
   .footer__copyright {
     -ms-grid-column-span: 3;
     grid-column: span 3;
