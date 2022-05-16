@@ -1507,6 +1507,14 @@ body::after {
   opacity: 0;
 }
 
+.info-card:hover .info-card__ongoing {
+  -webkit-transform: translate(42.5925925926%, 0px);
+      -ms-transform: translate(42.5925925926%, 0px);
+          transform: translate(42.5925925926%, 0px);
+  visibility: visible;
+  opacity: 1;
+}
+
 .info-card__image-ibg {
   padding-bottom: 50.1557632399%;
   border-radius: 24px;
@@ -2166,7 +2174,7 @@ body::after {
 
 @media (min-width: 61.99875em) {
   .header._header-scroll .header__container {
-    min-height: 3.125rem;
+    min-height: 2.5rem;
   }
 
   .footer__copyright {
@@ -2670,14 +2678,6 @@ body::after {
     -webkit-transition: all 0.2s ease 0.2s;
     -o-transition: all 0.2s ease 0.2s;
     transition: all 0.2s ease 0.2s;
-  }
-
-  .info-card:hover .info-card__ongoing {
-    -webkit-transform: translate(42.5925925926%, 0px);
-        -ms-transform: translate(42.5925925926%, 0px);
-            transform: translate(42.5925925926%, 0px);
-    visibility: visible;
-    opacity: 1;
   }
 
   .info-card__guide:hover {
