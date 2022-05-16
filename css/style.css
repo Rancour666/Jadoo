@@ -2175,6 +2175,8 @@ body::after {
 @media (min-width: 61.99875em) {
   .header._header-scroll .header__container {
     min-height: 2.5rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
   }
 
   .footer__copyright {
