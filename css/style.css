@@ -2175,6 +2175,14 @@ body::after {
     grid-template-columns: minmax(auto, 395px);
   }
 
+  .info-card:hover .info-card__ongoing {
+    -webkit-transform: translate(62.1621621622%, 0px);
+        -ms-transform: translate(62.1621621622%, 0px);
+            transform: translate(62.1621621622%, 0px);
+    visibility: visible;
+    opacity: 1;
+  }
+
   .testimonials__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2195,16 +2203,6 @@ body::after {
 
   .swiper-slide-active .card-testimonials {
     margin-right: 3rem;
-  }
-}
-
-@media (any-hover: hover) and (min-width: 61.99875em) and (orientation: portrait) {
-  .info-card:hover .info-card__ongoing {
-    -webkit-transform: translate(62.1621621622%, 0px);
-        -ms-transform: translate(62.1621621622%, 0px);
-            transform: translate(62.1621621622%, 0px);
-    visibility: visible;
-    opacity: 1;
   }
 }
 
