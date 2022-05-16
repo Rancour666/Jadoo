@@ -157,12 +157,6 @@ h6 {
   font-size: inherit;
 }
 
-.lock body {
-  overflow: hidden;
-  -ms-touch-action: none;
-      touch-action: none;
-}
-
 .wrapper {
   min-height: 100%;
   display: -webkit-box;
@@ -567,9 +561,9 @@ body::after {
   left: 0;
   top: 0;
   z-index: 50;
-  -webkit-transition: background-color 0.3s ease 0s;
-  -o-transition: background-color 0.3s ease 0s;
-  transition: background-color 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .header__container {
@@ -606,6 +600,10 @@ body::after {
 
 .header._header-scroll {
   background-color: rgba(255, 255, 255, 0.85);
+}
+
+.header._header-scroll .header__container {
+  min-height: 2.5rem;
 }
 
 .menu {
@@ -2173,12 +2171,6 @@ body::after {
 }
 
 @media (min-width: 61.99875em) {
-  .header._header-scroll .header__container {
-    min-height: 2.5rem;
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
-  }
-
   .footer__copyright {
     -ms-grid-column-span: 3;
     grid-column: span 3;
@@ -2373,6 +2365,12 @@ body::after {
 }
 
 @media (max-width: 47.99875em) {
+  .lock body {
+    overflow: hidden;
+    -ms-touch-action: none;
+        touch-action: none;
+  }
+
   [class*=__container] {
     max-width: none;
     padding: 0 0.9375rem;
