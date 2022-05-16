@@ -1705,10 +1705,6 @@ body::after {
   border-radius: 1.875rem;
 }
 
-.testimonials {
-  min-height: 22.25rem;
-}
-
 .testimonials__titles-block {
   padding-right: 2.3125rem;
 }

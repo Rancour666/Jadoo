@@ -4564,7 +4564,7 @@
             observeParents: true,
             slidesPerView: 1,
             spaceBetween: 0,
-            autoHeight: true,
+            autoHeight: false,
             speed: 800,
             effect: "fade",
             pagination: {
@@ -4579,13 +4579,7 @@
                 320: {
                     autoHeight: true
                 },
-                541: {
-                    autoHeight: false
-                },
-                768: {
-                    autoHeight: false
-                },
-                821: {
+                426: {
                     autoHeight: false
                 }
             },

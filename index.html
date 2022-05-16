@@ -9,28 +9,29 @@
 
 <body>
 	<div class="rootpage">
+		<div class="rootpage__logo">
+			<img src="img/rancour-logo.svg" alt="rancour-logo">
+		</div>
 		<h1>Верстка «Jadoo»</h1>
 		<div class="rootpage__info">
-			Особенности проекта
+			Особливості та склад проекту
 		</div>
-		<h2>Готовые страницы:</h2>
+		<h2>Готові сторінки:</h2>
 		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Головна</a></li>
+			<li><a target="_blank" href="home.html">Jadoo - Main Page</a></li>
+
 		</ol>
-		<h2>Попапы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
+
 		<div class="rootpage__tnx">
-			<h2>Спасибо за заказ!</h2>
-			<p>Буду рад (а) хорошему отзыву.</p>
-			<p>Обращайтесь еще!</p>
+			<h2>Дякую за замовлення!</h2>
+			<p>Буду радий (а) гарному відгуку.</p>
+			<p>Звертайтесь ще!</p>
 		</div>
 		<div class="rootpage__contacts">
-			<h2>Мои контакты:</h2>
-			<p>Почта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
+			<h2>Мої контакти:</h2>
+			<p>Пошта: <a href="mailto:rancour666@gmail.com">rancour666@gmail.com</a></p>
+			<p>Телефон: <a href="tel:380506614931">+380 50 661 49 31</a></p>
+			<p>Соц. мережа: <a href="https://www.facebook.com/profile.php?id=100001459434231">Мій фейсбук</a></p>
 		</div>
 	</div>
 </body>
@@ -55,7 +56,8 @@
 		min-width: 320px;
 		width: 100%;
 		color: #fff;
-		background-color: #5e5373;
+		background: url('img/rus-ship.jpg') center / cover no-repeat fixed;
+
 	}
 
 	body {
@@ -67,12 +69,12 @@
 
 	a {
 		text-decoration: underline;
-		color: #ebe691
+		color: #ebe691;
 	}
 
 	a:visited {
 		text-decoration: underline;
-		color: #aaa768;
+		color: #fb401f;
 	}
 
 	a:hover {
@@ -94,10 +96,22 @@
 	}
 
 	.rootpage {
-		padding: 30px;
-		display: flex;
+		padding: 20px;
+		margin: 20px 0px 0px 20px;
+		display: inline-flex;
 		flex-direction: column;
 		align-items: flex-start;
+		background-color: rgba(0, 0, 0, 0.3);
+		border-radius: 10px;
+	}
+
+	@media (max-width: 425px) {
+		.rootpage {
+			display: flex;
+			margin: 0 auto;
+			border-radius: 0px;
+		}
+
 	}
 
 	@media (max-width: 767px) {
@@ -141,28 +155,34 @@
 		margin: 0px 0px 2.25rem 1.25rem;
 	}
 
+	.rootpage__logo {
+		width: 100%;
+		height: 100%;
+	}
+
 	.rootpage__list li:not(:last-child) {
 		margin: 0px 0px 15px 0px;
 	}
 
 	.rootpage__contacts,
 	.rootpage__tnx {
-		border-radius: 200px;
+		border-radius: 10px;
 		padding: 20px 65px;
 		line-height: 140%;
+		width: 100%;
 	}
 
 	@media (max-width: 767px) {
 
 		.rootpage__contacts,
 		.rootpage__tnx {
-			border-radius: 40px;
+			border-radius: 10px;
 			padding: 20px;
 		}
 	}
 
 	.rootpage__contacts {
-		background: #32b5a4;
+		background: #32b5a482;
 
 	}
 
@@ -171,7 +191,7 @@
 	}
 
 	.rootpage__tnx {
-		background: #c22d63;
+		background: #c22d6483;
 		margin: 0px 0px 1rem 0px;
 	}
 </style>
