@@ -4575,14 +4575,6 @@
                 prevEl: ".testimonials__swiper-button-prev",
                 nextEl: ".testimonials__swiper-button-next"
             },
-            breakpoints: {
-                320: {
-                    autoHeight: true
-                },
-                426: {
-                    autoHeight: false
-                }
-            },
             on: {}
         });
     }

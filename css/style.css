@@ -2500,6 +2500,10 @@ body::after {
     grid-template-columns: 1fr;
   }
 
+  .testimonials__comments-block {
+    gap: 0.9375rem;
+  }
+
   .testimonials__slider {
     margin: 0 0 0 0.625rem;
   }
@@ -2516,6 +2520,10 @@ body::after {
 
   .card-testimonials__avatar-ibg {
     left: -1.5625rem;
+  }
+
+  .card-testimonials__comment-text:not(:last-child) {
+    margin-bottom: 1.25rem;
   }
 
   .sibscribe__body {
